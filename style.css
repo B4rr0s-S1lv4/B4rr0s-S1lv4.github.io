@@ -515,3 +515,19 @@ p{
     color:#f7931a;
 
 }
+
+footer{
+
+    margin-top:60px;
+
+    padding-top:20px;
+
+    border-top:1px solid #ddd;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:15px;
+
+}
