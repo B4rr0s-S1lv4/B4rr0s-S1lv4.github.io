@@ -123,3 +123,17 @@ p{
     border-radius:6px;
 
 }
+
+.subtitle{
+
+    text-align:center;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    margin-top:-5px;
+
+    margin-bottom:25px;
+
+}
