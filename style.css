@@ -399,3 +399,119 @@ p{
     margin-bottom:12px;
 
 }
+
+.stack-demo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    margin:45px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.stack-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.stack-title{
+
+    font-weight:bold;
+
+    font-size:22px;
+
+    margin-bottom:12px;
+
+}
+
+.stack-top{
+
+    color:#666;
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+}
+
+.stack-real{
+
+    border:3px solid #f7931a;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    min-width:240px;
+
+    background:white;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.stack-item{
+
+    padding:18px;
+
+    text-align:center;
+
+    font-family:Consolas, monospace;
+
+    font-size:20px;
+
+    border-bottom:2px solid #f7931a;
+
+}
+
+.stack-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.result{
+
+    background:#fff7ea;
+
+}
+
+.operation{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.operation-name{
+
+    color:#f7931a;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+}
+
+.operation-arrow{
+
+    font-size:60px;
+
+    color:#f7931a;
+
+}
