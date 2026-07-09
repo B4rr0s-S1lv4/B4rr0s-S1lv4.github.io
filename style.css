@@ -676,3 +676,19 @@ footer{
     color:#c0392b;
 
 }
+
+.references{
+
+    padding-left:25px;
+
+}
+
+.references li{
+
+    margin-bottom:18px;
+
+    text-align:justify;
+
+    line-height:1.7;
+
+}
