@@ -158,34 +158,74 @@ Uma análise sobre a proposta de reintrodução do opcode OP_CAT
 
     <figure class="stack-demo">
 
-        <div class="stack">
+    <div class="stack-column">
 
-            <div class="stack-title">Antes da execução</div>
+        <div class="stack-title">
+            Antes da execução
+        </div>
 
-            <div class="box">"Bitcoin"</div>
+        <div class="stack-top">
+            Topo da pilha ↓
+        </div>
 
-            <div class="box">"Hello "</div>
+        <div class="stack-real">
+
+            <div class="stack-item">
+                "Hello "
+            </div>
+
+            <div class="stack-item">
+                "Bitcoin"
+            </div>
 
         </div>
 
-        <div class="arrow">
+    </div>
+
+
+    <div class="operation">
+
+        <div class="operation-name">
 
             OP_CAT
 
-            ↓
+        </div>
+
+        <div class="operation-arrow">
+
+            ➜
 
         </div>
 
-        <div class="stack">
+    </div>
 
-            <div class="stack-title">Após a execução</div>
 
-            <div class="box">"Hello Bitcoin"</div>
+    <div class="stack-column">
+
+        <div class="stack-title">
+            Após a execução
+        </div>
+
+        <div class="stack-top">
+            Topo da pilha ↓
+        </div>
+
+        <div class="stack-real">
+
+            <div class="stack-item result">
+                "Hello Bitcoin"
+            </div>
 
         </div>
 
-    </figure>
+    </div>
 
+</figure>
+
+<p class="figure-caption">
+    Figura 1 – Funcionamento do opcode OP_CAT concatenando os dois elementos
+    localizados no topo da pilha do Bitcoin Script.
+</p>
     <p class="figure-caption">
         Figura 1 – Exemplo simplificado da operação realizada pelo opcode
         OP_CAT sobre a pilha do Bitcoin Script.
