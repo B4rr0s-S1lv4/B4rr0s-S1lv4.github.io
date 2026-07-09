@@ -301,3 +301,101 @@ p{
     margin-bottom:10px;
 
 }
+
+.flowchart{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin:45px 0;
+
+}
+
+.flow-box{
+
+    width:320px;
+
+    background:#ffffff;
+
+    border:2px solid #f7931a;
+
+    border-radius:8px;
+
+    padding:18px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.flow-box span{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:14px;
+
+    font-weight:normal;
+
+    color:#666;
+
+}
+
+.flow-arrow{
+
+    font-size:34px;
+
+    color:#f7931a;
+
+    margin:8px 0;
+
+}
+
+.highlight{
+
+    background:#fff7ea;
+
+}
+
+.success{
+
+    background:#eef9ef;
+
+    border-color:#38a169;
+
+}
+
+.proposal-box{
+
+    background:#f8f9fa;
+
+    border-left:6px solid #f7931a;
+
+    padding:22px;
+
+    border-radius:8px;
+
+    margin-top:35px;
+
+}
+
+.proposal-box h3{
+
+    margin-top:0;
+
+    color:#f7931a;
+
+}
+
+.proposal-box li{
+
+    margin-bottom:12px;
+
+}
