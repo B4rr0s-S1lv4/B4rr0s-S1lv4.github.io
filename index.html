@@ -303,15 +303,15 @@ Uma análise sobre a proposta de reintrodução do opcode OP_CAT
 
         <ul>
 
-            <li>✔ Reintroduz o opcode OP_CAT.</li>
+            <li> Reintroduz o opcode OP_CAT.</li>
 
-            <li>✔ Disponível apenas para scripts Tapscript.</li>
+            <li> Disponível apenas para scripts Tapscript.</li>
 
-            <li>✔ Mantém o limite máximo de 520 bytes por elemento da pilha.</li>
+            <li> Mantém o limite máximo de 520 bytes por elemento da pilha.</li>
 
-            <li>✔ Propõe ativação através de um soft fork.</li>
+            <li> Propõe ativação através de um soft fork.</li>
 
-            <li>✔ Busca ampliar as capacidades do Bitcoin Script sem comprometer a segurança do protocolo.</li>
+            <li> Busca ampliar as capacidades do Bitcoin Script sem comprometer a segurança do protocolo.</li>
 
         </ul>
 
@@ -320,6 +320,109 @@ Uma análise sobre a proposta de reintrodução do opcode OP_CAT
     <p class="figure-caption">
         Figura 3 – Resumo das principais características da proposta BIP 347.
     </p>
+
+</section>
+        <section id="proposta">
+
+    <h2>A proposta de reintrodução (BIP 347)</h2>
+
+    <p>
+
+        Após permanecer desabilitado por mais de uma década, o OP_CAT voltou
+        a despertar interesse na comunidade de desenvolvedores do Bitcoin.
+        Em 2023 foi apresentada a <strong>Bitcoin Improvement Proposal 347
+        (BIP 347)</strong>, cujo objetivo é reintroduzir esse opcode de forma
+        segura, aproveitando as melhorias trazidas pelo Taproot e pelo
+        Tapscript.
+
+    </p>
+
+    <p>
+
+        Diferentemente da implementação original de 2009, a proposta limita
+        o uso do OP_CAT apenas aos scripts escritos em
+        <strong>Tapscript</strong>. Dessa forma, evita-se alterar scripts
+        antigos e reduz-se o risco de incompatibilidades ou comportamentos
+        inesperados na rede.
+
+    </p>
+
+    <p>
+
+        A proposta também mantém restrições importantes, como o limite de
+        <strong>520 bytes</strong> por elemento da pilha, impedindo que a
+        concatenação produza estruturas excessivamente grandes que possam
+        comprometer o desempenho dos nós da rede.
+
+    </p>
+
+    <figure class="flowchart">
+
+        <div class="flow-box">
+            OP_CAT removido
+            <span>2010</span>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-box">
+            Discussões da comunidade
+            <span>2010–2023</span>
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-box highlight">
+            BIP 347
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-box">
+            Apenas Tapscript
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-box">
+            Soft Fork
+        </div>
+
+        <div class="flow-arrow">↓</div>
+
+        <div class="flow-box success">
+            Novas funcionalidades
+            <span>Bitcoin Script</span>
+        </div>
+
+    </figure>
+
+    <p class="figure-caption">
+
+        Figura 3 – Fluxograma resumindo a proposta de reintrodução do
+        OP_CAT através da BIP 347.
+
+    </p>
+
+    <div class="proposal-box">
+
+        <h3>Principais características da BIP 347</h3>
+
+        <ul>
+
+            <li>Reintroduz o opcode OP_CAT.</li>
+
+            <li>Disponível apenas para scripts Tapscript.</li>
+
+            <li>Mantém o limite de 520 bytes por elemento da pilha.</li>
+
+            <li>Compatível com ativação por soft fork.</li>
+
+            <li>Amplia as capacidades do Bitcoin Script preservando a segurança.</li>
+
+        </ul>
+
+    </div>
 
 </section>
     </main>
