@@ -83,8 +83,9 @@ Uma análise sobre a proposta de reintrodução do opcode OP_CAT
 
             <p>
                 Este trabalho apresenta uma análise da proposta de reintrodução do OP_CAT,
-                discutindo seu funcionamento, suas possíveis aplicações, seus benefícios e os
-                desafios associados à sua adoção no ecossistema Bitcoin.
+                discutindo seu funcionamento, suas possíveis aplicações, seus benefícios e
+                os desafios associados à sua adoção no ecossistema Bitcoin
+                (BITCOIN IMPROVEMENT PROPOSAL, 2024).
             </p>
 
         </section>
@@ -96,7 +97,8 @@ Uma análise sobre a proposta de reintrodução do opcode OP_CAT
     <p>
         O Bitcoin utiliza uma linguagem de programação chamada
         <strong>Bitcoin Script</strong> para definir as condições que precisam
-        ser satisfeitas para que uma saída de transação (UTXO) possa ser gasta.
+        ser satisfeitas para que uma saída de transação (UTXO) possa ser gasta 
+        (NAKAMOTO, 2008; ANTONOPOULOS, 2017).
         Diferentemente de linguagens de programação tradicionais, o Script foi
         projetado para ser simples, determinístico e seguro, evitando recursos
         como laços de repetição e recursão que poderiam comprometer a validação
@@ -125,7 +127,7 @@ Uma análise sobre a proposta de reintrodução do opcode OP_CAT
         comandos foi o <strong>OP_CAT</strong>, responsável por concatenar dois
         elementos presentes no topo da pilha. Embora tenha sido removido em
         2010, sua possível reintrodução voltou a ser discutida pela comunidade,
-        tornando-se o foco deste trabalho.
+        tornando-se o foco deste trabalho (BITCOIN WIKI, 2026).
     </p>
 
 </section>
@@ -140,8 +142,8 @@ Embora o Bitcoin tenha sido concebido originalmente como um sistema de
 pagamentos eletrônicos ponto a ponto, sua linguagem de scripts evoluiu ao
 longo dos anos e passou a permitir mecanismos mais sofisticados para o
 controle de ativos digitais. Com atualizações como SegWit e Taproot,
-novas aplicações tornaram-se possíveis, ampliando o interesse por propostas
-como a reintrodução do OP_CAT.
+novas aplicações tornaram-se possíveis , ampliando o interesse por propostas
+como a reintrodução do OP_CAT (BIP 341; BIP 342).
 
 </p>
 
@@ -227,6 +229,7 @@ Grande parte dessas aplicações depende da capacidade de manipular dados
 durante a execução dos scripts. Por esse motivo, diversos pesquisadores
 consideram que a reintrodução do OP_CAT pode facilitar a implementação
 desses mecanismos sem alterar os princípios fundamentais do protocolo.
+    
 
 </p>
 
