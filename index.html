@@ -121,7 +121,71 @@ Uma análise sobre a proposta de reintrodução do opcode OP_CAT
     </p>
 
 </section>
+<section id="opcat">
 
+    <h2>O que é o OP_CAT?</h2>
+
+    <p>
+        O <strong>OP_CAT</strong> (Operation Concatenate) é um opcode do Bitcoin
+        Script cuja função consiste em concatenar os dois elementos localizados
+        no topo da pilha (stack). Em outras palavras, ele remove esses dois
+        elementos, une seus conteúdos em uma única sequência de bytes e insere
+        novamente o resultado no topo da pilha.
+    </p>
+
+    <p>
+        Embora essa operação seja simples, ela amplia significativamente as
+        possibilidades de manipulação de dados dentro do Bitcoin Script. A
+        concatenação de valores permite construir estruturas mais complexas,
+        facilitando a implementação de determinadas verificações
+        criptográficas e contratos inteligentes mais expressivos.
+    </p>
+
+    <p>
+        O OP_CAT fazia parte do conjunto original de opcodes disponibilizados
+        por Satoshi Nakamoto no lançamento do Bitcoin. Entretanto, devido a
+        preocupações relacionadas à segurança do protocolo, ele foi
+        desabilitado em 2010 juntamente com outros opcodes considerados
+        potencialmente perigosos. Atualmente, sua possível reintrodução é
+        discutida pela comunidade através da proposta BIP 347.
+    </p>
+
+    <figure class="stack-demo">
+
+        <div class="stack">
+
+            <div class="stack-title">Antes da execução</div>
+
+            <div class="box">"Bitcoin"</div>
+
+            <div class="box">"Hello "</div>
+
+        </div>
+
+        <div class="arrow">
+
+            OP_CAT
+
+            ↓
+
+        </div>
+
+        <div class="stack">
+
+            <div class="stack-title">Após a execução</div>
+
+            <div class="box">"Hello Bitcoin"</div>
+
+        </div>
+
+    </figure>
+
+    <p class="figure-caption">
+        Figura 1 – Exemplo simplificado da operação realizada pelo opcode
+        OP_CAT sobre a pilha do Bitcoin Script.
+    </p>
+
+</section>
     </main>
 
 </body>
