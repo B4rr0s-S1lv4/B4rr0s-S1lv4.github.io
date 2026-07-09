@@ -655,6 +655,114 @@ Tabela 1 – Principais benefícios esperados com a reintrodução do OP_CAT.
 </p>
 
 </section>
+            <section id="riscos">
+
+<h2>Riscos e desafios da reintrodução do OP_CAT</h2>
+
+<p>
+
+Embora a reintrodução do OP_CAT apresente diversas possibilidades para a
+evolução do Bitcoin Script, a proposta também desperta preocupações entre
+pesquisadores e desenvolvedores. O principal desafio consiste em ampliar as
+capacidades da linguagem sem comprometer os princípios fundamentais do
+Bitcoin, como segurança, simplicidade e previsibilidade do protocolo
+(BIP 347).
+
+</p>
+
+<p>
+
+Uma das principais preocupações refere-se à possibilidade de que scripts
+mais expressivos aumentem sua complexidade. Embora o OP_CAT execute apenas
+uma operação simples de concatenação de dados, sua combinação com outros
+opcodes pode permitir construções significativamente mais sofisticadas,
+tornando a análise e a auditoria de scripts mais difíceis.
+
+</p>
+
+<p>
+
+Outro ponto frequentemente discutido é o risco de ataques de negação de
+serviço (Denial of Service – DoS). A versão original do OP_CAT foi
+desabilitada em 2010 justamente porque, na época, existia a preocupação de
+que operações repetidas de concatenação produzissem consumo excessivo de
+memória e processamento durante a validação das transações.
+
+</p>
+
+<p>
+
+Os defensores da BIP 347 argumentam que esse cenário mudou
+consideravelmente após as atualizações do Bitcoin Script. Atualmente
+existem limites rigorosos para o tamanho dos elementos da pilha (520 bytes),
+além de restrições introduzidas pelo Tapscript, reduzindo significativamente
+os riscos existentes na implementação original da operação.
+
+</p>
+
+<p>
+
+Também existe um debate filosófico dentro da comunidade Bitcoin. Alguns
+desenvolvedores defendem que o protocolo deve permanecer o mais simples
+possível, evitando a introdução de novas funcionalidades. Outros entendem
+que pequenas melhorias cuidadosamente analisadas podem ampliar as
+possibilidades do Bitcoin sem comprometer sua segurança ou descentralização.
+
+</p>
+
+<div class="risk-table">
+
+<div class="risk-item">
+
+<h3>Complexidade</h3>
+
+<p>
+Scripts mais expressivos podem ser mais difíceis de desenvolver,
+auditar e manter.
+</p>
+
+</div>
+
+<div class="risk-item">
+
+<h3>Segurança</h3>
+
+<p>
+É necessário garantir que o OP_CAT não reintroduza vulnerabilidades
+corrigidas nas primeiras versões do protocolo.
+</p>
+
+</div>
+
+<div class="risk-item">
+
+<h3>Desempenho</h3>
+
+<p>
+Operações adicionais aumentam a necessidade de validações eficientes
+pelos nós da rede.
+</p>
+
+</div>
+
+<div class="risk-item">
+
+<h3>Consenso</h3>
+
+<p>
+Como qualquer alteração no protocolo Bitcoin, a adoção da BIP 347 depende
+do consenso da comunidade e dos desenvolvedores do Bitcoin Core.
+</p>
+
+</div>
+
+</div>
+
+<p class="figure-caption">
+Figura 4 – Principais desafios associados à possível reintrodução do OP_CAT.
+</p>
+
+</section>
         <footer>
 
 <p>
