@@ -32,7 +32,7 @@
     <a href="#conclusao">Conclusão</a>
 
 </nav>
-        <section>
+        <section id="introducao">
 
             <h2>Introdução</h2>
 
@@ -65,7 +65,48 @@
                 desafios associados à sua adoção no ecossistema Bitcoin.
             </p>
 
-        <section id="introducao">
+        </section>
+            
+            <section id="script">
+
+    <h2>Bitcoin Script e Opcodes</h2>
+
+    <p>
+        O Bitcoin utiliza uma linguagem de programação chamada
+        <strong>Bitcoin Script</strong> para definir as condições que precisam
+        ser satisfeitas para que uma saída de transação (UTXO) possa ser gasta.
+        Diferentemente de linguagens de programação tradicionais, o Script foi
+        projetado para ser simples, determinístico e seguro, evitando recursos
+        como laços de repetição e recursão que poderiam comprometer a validação
+        das transações pelos nós da rede.
+    </p>
+
+    <p>
+        O Bitcoin Script é baseado em uma estrutura de pilha (stack), na qual
+        dados e instruções são processados sequencialmente. Durante a execução,
+        valores são inseridos na pilha, manipulados por instruções e, ao final,
+        o resultado determina se as condições da transação foram atendidas.
+    </p>
+
+    <p>
+        As instruções executadas pelo Bitcoin Script são chamadas de
+        <strong>opcodes</strong> (operation codes). Cada opcode representa uma
+        operação específica, como duplicar um elemento da pilha, calcular um
+        hash criptográfico, verificar assinaturas digitais ou comparar valores.
+        Em conjunto, esses comandos permitem construir regras que garantem a
+        autenticidade e a autorização das transações realizadas na rede Bitcoin.
+    </p>
+
+    <p>
+        Entre os diversos opcodes existentes, alguns foram desativados nas
+        primeiras versões do protocolo por motivos de segurança. Um desses
+        comandos foi o <strong>OP_CAT</strong>, responsável por concatenar dois
+        elementos presentes no topo da pilha. Embora tenha sido removido em
+        2010, sua possível reintrodução voltou a ser discutida pela comunidade,
+        tornando-se o foco deste trabalho.
+    </p>
+
+</section>
 
     </main>
 
