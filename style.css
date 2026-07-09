@@ -42,15 +42,27 @@ h1{
 
 h2{
 
-    color:#333;
+    color:#222;
+
+    border-left:6px solid #f7931a;
+
+    padding-left:12px;
+
+    margin-top:50px;
 
 }
 
 nav{
 
-    text-align:center;
+    display:flex;
+
+    justify-content:center;
+
+    gap:35px;
 
     margin:30px 0;
+
+    flex-wrap:wrap;
 
 }
 
