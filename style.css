@@ -609,3 +609,36 @@ footer{
     background:#fafafa;
 
 }
+/* ---------- APLICAÇÕES ---------- */
+
+.concept-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+    margin:35px 0;
+
+}
+
+.concept-card{
+
+    background:#f8f8f8;
+
+    border-top:5px solid #f7931a;
+
+    padding:20px;
+
+    border-radius:8px;
+
+}
+
+.concept-card h3{
+
+    margin-top:0;
+
+    color:#f7931a;
+
+}
